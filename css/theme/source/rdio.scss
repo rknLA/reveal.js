@@ -24,6 +24,7 @@
 
 // Rdio colors ---------------------------------
 $rdio-blue: rgb(0, 112, 177);
+$rdio-blue-border: rgb(22, 135, 200);
 $dark-grey-text: rgb(91, 96, 100);
 $off-black-header: rgb(44, 48, 52);
 $off-black-text: rgb(20, 22, 25);
@@ -46,13 +47,41 @@ $linkColorHover: lighten( $linkColor, 20% );
 @import "../template/theme";
 // ---------------------------------------------
 
+.reveal ul {
+  list-style: none;
+
+  margin-left: 0;
+
+  li {
+    margin-bottom: 0.41em;
+  }
+
+  li:before {
+    content: '•';
+    font-size: 0.6em;
+    vertical-align: top;
+    padding-right: 1em;
+  }
+}
+
+.reveal {
+  color: $off-black-text
+}
+
+.reveal .present {
+  text-align: left;
+  padding-left: 1em;
+}
 
 .chapter .reveal .state-background {
   background-color: $rdio-blue;
 }
+
 .chapter {
   h1, h2, h3, h4, h5, h6 {
+    text-align: center;
     color: white;
+    text-shadow: 0px -3px 10px rgba(0,0,0,0.5);
   }
 }
 
@@ -70,15 +99,17 @@ $linkColorHover: lighten( $linkColor, 20% );
 
 .reveal header {
   background-color: transparent;
+  color: black;
   display: block;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   border-style: none none solid none;
-  border-bottom-color: $rdio-blue;
-  border-bottom-width: 2px;
-  margin-left: 16.7%;
+  border-bottom-color: $rdio-blue-border;
+  border-bottom-width: 1px;
+  margin-left: 11%;
   padding: 0.6em 0 0.6em 0;
-  font-size: 0.7em;
+  font-size: 0.8em;
+  font-weight: Light;
 }
