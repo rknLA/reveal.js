@@ -1,0 +1,77 @@
+/**
+ * Rdio theme for reveal.js.
+ * 
+ * Copyright (C) 2013 Rdio, Inc. - http://rdio.com/
+ * Written by R. Kevin Nelson
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Rdio font -----------------------------------
+@font-face {
+  font-family: "Whitney";
+  src: url("../../../font/Whitney-Light.otf");
+
+  font-weight: normal;
+  font-style: normal;
+}
+// ---------------------------------------------
+
+// Rdio colors ---------------------------------
+$rdio-blue: rgb(0, 112, 177);
+$dark-grey-text: rgb(91, 96, 100);
+$off-black-header: rgb(44, 48, 52);
+$off-black-text: rgb(20, 22, 25);
+$light-grey-background: rgb(205, 208, 213);
+$grey-header-for-blue-background: rgba(255,255,255,0.3);
+// ---------------------------------------------
+
+// Override theme settings
+$mainFont: 'Whitney', sans-serif;
+$mainColor: $off-black-text;
+$headingFont: 'Whitney', sans-serif;
+$headingColor: $off-black-header;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #FFF;
+$linkColor: $rdio-blue;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+.chapter .reveal .state-background {
+  background-color: $rdio-blue;
+}
+.chapter {
+  h1, h2, h3, h4, h5, h6 {
+    color: white;
+  }
+}
+
+.title-slide .reveal .state-background {
+  background-color: $light-grey-background;
+}
+.title-slide {
+  h1 {
+    color: $off-black-header;
+  }
+  h2, h3, h4, h5, h6 {
+    color: $dark-grey-text;
+  }
+}
+
+header {
+  background-color: transparent;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
