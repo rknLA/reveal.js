@@ -30,6 +30,7 @@ $off-black-header: rgb(44, 48, 52);
 $off-black-text: rgb(20, 22, 25);
 $light-grey-background: rgb(205, 208, 213);
 $grey-header-for-blue-background: rgba(255,255,255,0.3);
+$rdio-border-grey: rgb(179, 179, 179);
 // ---------------------------------------------
 
 // Override theme settings
@@ -87,6 +88,9 @@ $linkColorHover: lighten( $linkColor, 20% );
 
 .title-slide .reveal .state-background {
   background-color: $light-grey-background;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
 }
 .title-slide {
   h1 {
@@ -94,6 +98,17 @@ $linkColorHover: lighten( $linkColor, 20% );
   }
   h2, h3, h4, h5, h6 {
     color: $dark-grey-text;
+  }
+
+  div img {
+    border-style: none;
+    box-shadow: none;
+    background: none;
+    height: 0.9em;
+    vertical-align: baseline;
+    margin-left: -1.1em;
+    margin-right: 0.2em;
+    
   }
 }
 
@@ -112,4 +127,32 @@ $linkColorHover: lighten( $linkColor, 20% );
   padding: 0.6em 0 0.6em 0;
   font-size: 0.8em;
   font-weight: Light;
+}
+
+.reveal footer {
+  background-color: transparent;
+  background-image: url('../../../img/rdio-logo.png');
+  background-size: 50px 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: $dark-grey-text;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 89%;
+  margin-left: 11%;
+
+  border-style: solid none none none;
+  border-top-color: $rdio-border-grey;
+  border-top-width: 1px;
+  padding: 1.3em 1em 1em 0;
+  margin-bottom: 0.3em;
+
+  vertical-align: baseline;
+
+  text-transform: uppercase;
+  font-size: 0.3em;
+  text-align: right;
+
 }

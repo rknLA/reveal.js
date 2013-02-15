@@ -191,6 +191,9 @@ body {
 
 .title-slide .reveal .state-background {
   background-color: #cdd0d5;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .title-slide h1 {
@@ -198,6 +201,15 @@ body {
 }
 .title-slide h2, .title-slide h3, .title-slide h4, .title-slide h5, .title-slide h6 {
   color: #5b6064;
+}
+.title-slide div img {
+  border-style: none;
+  box-shadow: none;
+  background: none;
+  height: 0.9em;
+  vertical-align: baseline;
+  margin-left: -1.1em;
+  margin-right: 0.2em;
 }
 
 .reveal header {
@@ -215,4 +227,28 @@ body {
   padding: 0.6em 0 0.6em 0;
   font-size: 0.8em;
   font-weight: Light;
+}
+
+.reveal footer {
+  background-color: transparent;
+  background-image: url("../../../img/rdio-logo.png");
+  background-size: 50px 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: #5b6064;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 89%;
+  margin-left: 11%;
+  border-style: solid none none none;
+  border-top-color: #b3b3b3;
+  border-top-width: 1px;
+  padding: 1.3em 1em 1em 0;
+  margin-bottom: 0.3em;
+  vertical-align: baseline;
+  text-transform: uppercase;
+  font-size: 0.3em;
+  text-align: right;
 }
