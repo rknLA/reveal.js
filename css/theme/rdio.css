@@ -70,7 +70,7 @@ body {
 }
 
 .reveal a:not(.image):hover {
-  color: #18aaff;
+  color: #5b6064;
   text-shadow: none;
   border: none;
 }
@@ -125,19 +125,19 @@ body {
 }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #18aaff;
+  border-right-color: #5b6064;
 }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #18aaff;
+  border-left-color: #5b6064;
 }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #18aaff;
+  border-bottom-color: #5b6064;
 }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #18aaff;
+  border-top-color: #5b6064;
 }
 
 /*********************************************

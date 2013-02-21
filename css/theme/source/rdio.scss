@@ -42,7 +42,7 @@ $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: #FFF;
 $linkColor: $rdio-blue;
-$linkColorHover: lighten( $linkColor, 20% );
+$linkColorHover: $dark-grey-text;
 
 // Theme template ------------------------------
 @import "../template/theme";
